@@ -1,13 +1,21 @@
 //Importar o React
-import React from 'react';
+import React, {useState} from 'react';
+import {Container } from 'reactstrap';
 
 //Criar a classe com o nome Headers
-function Article(){
+function Article(props){
   
         return(
             <div>
-            <h3>Titulo do artigo</h3>
-            <p>Conteúdo do artigo</p>
+
+          
+        <Container fluid>
+          <h1 className="display-3">Titulo do artigo</h1>
+          <p className="lead">Conteúdo do artigo. This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </Container>
+     
+
+
         </div>
         );
     }

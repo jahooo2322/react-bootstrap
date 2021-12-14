@@ -1,13 +1,45 @@
 //Importar o React
 import React from 'react';
+import { Table } from 'reactstrap';
 
 //Criar a classe com o nome Headers
-function Footer(){
+function Footer(props){
   
         return(
             <div>
-            <h4 style={{color: "green"}}>Rodapé 1</h4>
-            <h4 style={{color: "#0000FF"}}>Rodapé 2</h4>
+           
+           <Table borderless>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </Table>
+
+
         </div>
         );
     }
